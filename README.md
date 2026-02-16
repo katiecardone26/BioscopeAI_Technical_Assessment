@@ -1,7 +1,7 @@
 # BioscopeAI Technical Assessment
 Technical Assessment Deliverables for Bioscope AI Interview.
 
-*Important Commands*
+**Important Commands**
 
 Run nextflow pipeline: `nextflow run main.nf -profile aws`
 
