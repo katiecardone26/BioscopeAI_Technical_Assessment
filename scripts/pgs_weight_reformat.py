@@ -52,9 +52,6 @@ pgs_colname = args.scorePGSCol
 ## score file name
 score_file_name = args.scoreFile
 
-# add score variant ID to list
-var_id_type_list.append(args.scoreIdFormat)
-
 # read in score file
 score_file = pd.read_table(score_file_name, sep = None, engine = 'python', dtype = {pos_colname: int, variant_id_colname: str, a1_colname: str, a2_colname: str})
     

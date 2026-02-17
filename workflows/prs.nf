@@ -292,7 +292,7 @@ workflow PGS {
 process clean_vcf {
     publishDir "${launchDir}/plink2/initial_cleaning/${validation_population}/"
     input:
-        tuple val(validation_population), val(chromosome) path(vcf_file)
+        tuple val(validation_population), val(chromosome), path(vcf_file)
         val(my_plink2)
     output:
         tuple val(validation_population), val(chromosome), path("${validation_population}.cleaned.chr${chromosome}.{pgen, psam, pvar}")
