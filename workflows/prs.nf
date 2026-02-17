@@ -670,7 +670,7 @@ process ref_pca {
 
         # run fraposa pca
         ${my_fraposa} \$plink_prefix \
-        --method shrinkage \
+        --method oadp \
         --dim_ref 10
         """
     stub:
@@ -700,7 +700,7 @@ process project_pca {
 
         # run fraposa pca
         ${my_fraposa} \$ref_plink_prefix \
-        --method shrinkage \
+        --method oadp \
         --dim_ref 10 \
         --stu_filepref \$target_plink_prefix \
         --out ${validation_population}.${ref_key}.pca.projection
